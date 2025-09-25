@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple HTML Resume</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Urbanist:wght@300;400;600;700;800;900&display=swap");
+      html {
+        font-family: "jost", sans-serif;
+        background-color: #efefef;
+        scroll-behavior: smooth;
+      }
+      table{
+      text-align: center;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    td,tr,th{
+       border: 2px solid black;  
+       padding: 10px;
+    }
+    
+    
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-detail">
+        <h1>Nitish Kumar</h1>
+        <ul
+          style="
+            display: flex;
+            gap: 20px;
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+          "
+        >
+          <li>Web Developer</li>
+          <li>C-Programming</li>
+          <li>Problem Solver</li>
+        </ul>
+        <ul
+          style="
+            display: flex;
+            gap: 10px;
+            list-style-type: none;
+            margin-left: -1px;
+            padding: 0px;
+          "
+        >
+          <li><a href="#">About</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#pro">Projects</a></li>
+          <li><a href="#edu">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <hr>
+      </div>
+    </header>
+    <main>
+      <div class="aboutMe">
+        <h2>About Me</h2>
+        <p>
+          Hello, my name is Nitish Kumar I am passionate about web development
+          and currently working with the BCA degree to build practical projects.
+          I enjoy writing clear code and creating simple, user-friendly designs.
+        </p>
+        <img
+          style="border-radius: 10px"
+          width="200px"
+          src="https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tcHV0ZXIlMjBzY2llbmNlfGVufDB8fDB8fHww"
+          alt="Computer science image"
+        />
+        </div>
+        <div class="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Node,js,Express,MongoDB</li>
+            <li>Git&GitHub</li>
+          </ul>
+          <hr>
+        </div>
+        <div class="project">
+          <h2 id="pro">Projects</h2>
+          <h3>NoteTakingApp</h3>
+          <p>A simple note application with create, update, and delete functionality.</p>
+          <p>Tech:HTML, Note, js, Express, MongoDB.</p>
+          <p>Link: <a href="#">View Project</a></p>
+        </div>
+        <div class="pdfandword">
+          <h3>PDF & Word Converter</h3>
+          <p>A utility to convert PDF files to Word and vice versa.</p>
+          <p>Link: <a href="#">View Project</a></p>
+        </div>
+        <div class="tutorialwebsite">
+          <h3>Tutorial Website</h3>
+          <p>A website providing free programming lessons and notes.</p>
+          <p>Link: <a href="#">Visit Project</a></p>
+        </div>
+        <div class="experince">
+          <h3>Experince</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Role</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <td>2024</td>
+              <td>Web Developer Intern</td>
+              <td>Worked on small CRUD applications and learned REST APIs and deployment basics.</td>
+            </tbody>
+             <tbody>
+              <td>2025</td>
+              <td>Personal Projects</td>
+              <td>Developed multiple personal projects including NoteTaking, converters, and tutorial site.</td>
+            </tbody>
+          </table>
+        </div>
+        <div class="education">
+          <h3 id="edu">Education</h3>
+          <ul>
+            <li>BCA-(RPTC)-Year of Completion</li>
+            <li>Online Course: Web Delelopment, Data Sturtures,etc.</li>
+          </ul>
+          <hr>
+        </div>
+      </main>
+      <footer>
+        <div class="contact">
+          <h3 id="contact">Contact</h3>
+          <p>Email: <a href="#">nitishkumar@gmail.com</a></p>
+          <p>Phone:7080000000</p>
+
+        </div>
+        <div class="form">
+          <h3>Quick Contact Form</h3>
+          <label for="name">Name</label><br>
+          <input type="text" id="name" placeholder="Enter your name"><br><br>
+          <p style="margin-bottom: 0px;">Message</p>
+          <textarea rows="10" cols="40" placeholder="Type you message"></textarea>
+          <br><br>
+          <button>Send Email</button>
+        </div>
+        <hr>
+        <p>&copy 2025 Nitish Kumar: All rights reserved</p>
+      </footer>
+  </body>
+</html>
